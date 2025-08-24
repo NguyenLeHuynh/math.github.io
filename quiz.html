@@ -2,29 +2,19 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Trò chơi Toán</title>
+  <title>Trắc nghiệm Toán</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="sidebar">
-    <div class="logo">
-      <img src="img/ntt-logo.png" alt="Logo">
-    </div>
-    <ul class="menu">
-      <li><a href="index.html">Trang chủ</a></li>
-      <li><a href="lessons.html">Bài học</a></li>
-      <li><a href="exercises.html">Bài tập</a></li>
-      <li><a href="quiz.html" class="active">Trò chơi</a></li>
-    </ul>
-  </div>
-
-  <div class="content">
-    <h1>Trò chơi đố vui Toán</h1>
-    <p id="quiz-question">Câu hỏi sẽ hiện ở đây</p>
-    <input type="text" id="quiz-answer" placeholder="Nhập câu trả lời">
-    <button onclick="checkQuiz()">Trả lời</button>
+  <header>
+    <h1>Trắc nghiệm vui</h1>
+  </header>
+  <main>
+    <div id="quiz-container"></div>
+    <button onclick="checkQuiz()">Nộp bài</button>
     <p id="quiz-result"></p>
-  </div>
+  </main>
 </body>
 </html>
+
