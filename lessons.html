@@ -4,28 +4,29 @@
   <meta charset="UTF-8">
   <title>Bài học Toán</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="sidebar">
-    <div class="logo">
-      <img src="img/ntt-logo.png" alt="Logo">
-    </div>
-    <ul class="menu">
-      <li><a href="index.html">Trang chủ</a></li>
-      <li><a href="lessons.html" class="active">Bài học</a></li>
-      <li><a href="exercises.html">Bài tập</a></li>
-      <li><a href="quiz.html">Trò chơi</a></li>
-    </ul>
-  </div>
+  <header>
+    <h1>Bài học</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="lessons.html">Bài học</a>
+      <a href="exercises.html">Bài tập</a>
+      <a href="quiz.html">Trắc nghiệm</a>
+    </nav>
+  </header>
 
-  <div class="content">
-    <h1>Bài học Toán</h1>
-    <ul class="lesson-list">
-      <li>Cộng trừ trong phạm vi 100</li>
-      <li>Bảng cửu chương</li>
-      <li>Hình vuông, hình chữ nhật</li>
-      <li>Phân số cơ bản</li>
+  <main>
+    <h2>Chọn lớp học</h2>
+    <ul>
+      <li><a href="#" onclick="loadLessons('lop1')">📘 Lớp 1</a></li>
+      <li><a href="#" onclick="loadLessons('lop2')">📗 Lớp 2</a></li>
+      <li><a href="#" onclick="loadLessons('lop3')">📕 Lớp 3</a></li>
+      <li><a href="#" onclick="loadLessons('lop4')">📒 Lớp 4</a></li>
+      <li><a href="#" onclick="loadLessons('lop5')">📔 Lớp 5</a></li>
     </ul>
-  </div>
+    <div id="lesson-container"></div>
+  </main>
 </body>
 </html>
