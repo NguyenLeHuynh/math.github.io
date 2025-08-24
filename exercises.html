@@ -7,27 +7,13 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="sidebar">
-    <div class="logo">
-      <img src="img/ntt-logo.png" alt="Logo">
-    </div>
-    <ul class="menu">
-      <li><a href="index.html">Trang chủ</a></li>
-      <li><a href="lessons.html">Bài học</a></li>
-      <li><a href="exercises.html" class="active">Bài tập</a></li>
-      <li><a href="quiz.html">Trò chơi</a></li>
-    </ul>
-  </div>
-
-  <div class="content">
-    <h1>Bài tập</h1>
-    <form id="exerciseForm">
-      <p>1) 5 + 7 = <input type="number" name="q1"></p>
-      <p>2) 9 - 4 = <input type="number" name="q2"></p>
-      <p>3) 3 × 6 = <input type="number" name="q3"></p>
-      <button type="submit">Nộp bài</button>
-    </form>
+  <header>
+    <h1>Bài tập luyện tập</h1>
+  </header>
+  <main>
+    <div id="exercise-container"></div>
+    <button onclick="checkExercises()">Nộp bài</button>
     <p id="result"></p>
-  </div>
+  </main>
 </body>
 </html>
